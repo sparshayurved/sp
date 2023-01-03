@@ -1,174 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6RN9W53CV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-C6RN9W53CV');
-</script>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="stylesheet" href="build/tailwind.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-        },
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6RN9W53CV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-C6RN9W53CV');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="stylesheet" href="build/tailwind.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
       }
     }
-  }
-</script>
+  </script>
 
-    <title>Sparsh Ayurved</title>
+  <title>Sparsh Ayurved</title>
 
-    <style>
-      #menu-toggle:checked + #menu {
-        display: block;
-      }
+  <style>
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
 
-      #dropdown-toggle:checked + #dropdown {
-        display: block;
-      }
+    #dropdown-toggle:checked+#dropdown {
+      display: block;
+    }
 
-      a,
-      span {
-        position: relative;
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
+    a,
+    span {
+      position: relative;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
 
-      a.arrow,
-      span.arrow {
-        display: flex;
-        align-items: center;
-        font-weight: 600;
-        line-height: 1.5;
-      }
+    a.arrow,
+    span.arrow {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      line-height: 1.5;
+    }
 
-      a.arrow .arrow_icon,
-      span.arrow .arrow_icon {
-        position: relative;
-        margin-left: 0.5em;
-      }
+    a.arrow .arrow_icon,
+    span.arrow .arrow_icon {
+      position: relative;
+      margin-left: 0.5em;
+    }
 
-      a.arrow .arrow_icon svg,
-      span.arrow .arrow_icon svg {
-        transition: transform 0.3s 0.02s ease;
-        margin-right: 1em;
-      }
+    a.arrow .arrow_icon svg,
+    span.arrow .arrow_icon svg {
+      transition: transform 0.3s 0.02s ease;
+      margin-right: 1em;
+    }
 
-      a.arrow .arrow_icon::before,
-      span.arrow .arrow_icon::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: #38b2ac;
-        transform: translateY(-50%);
-        transition: width 0.3s ease;
-      }
+    a.arrow .arrow_icon::before,
+    span.arrow .arrow_icon::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #38b2ac;
+      transform: translateY(-50%);
+      transition: width 0.3s ease;
+    }
 
-      a.arrow:hover .arrow_icon::before,
-      span.arrow:hover .arrow_icon::before {
-        width: 1em;
-      }
+    a.arrow:hover .arrow_icon::before,
+    span.arrow:hover .arrow_icon::before {
+      width: 1em;
+    }
 
-      a.arrow:hover .arrow_icon svg,
-      span.arrow:hover .arrow_icon svg {
-        transform: translateX(0.75em);
-      }
+    a.arrow:hover .arrow_icon svg,
+    span.arrow:hover .arrow_icon svg {
+      transform: translateX(0.75em);
+    }
 
-      /* .cover {
+    /* .cover {
       border-bottom-right-radius: 128px;
     } */
 
-      .bg-blue-teal-gradient {
-        background: rgb(49, 130, 206);
-        background: linear-gradient(
-          90deg,
+    .bg-blue-teal-gradient {
+      background: rgb(49, 130, 206);
+      background: linear-gradient(90deg,
           rgba(49, 130, 206, 1) 0%,
-          rgba(56, 178, 172, 1) 100%
-        );
-      }
+          rgba(56, 178, 172, 1) 100%);
+    }
 
-      /* @media (min-width: 1024px) {
+    /* @media (min-width: 1024px) {
       .cover {
         border-bottom-right-radius: 256px;
       }
     } */
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body class="antialiased bg-white font-sans text-gray-900">
-    <main class="w-full">
-      <!-- start header -->
-      <header
-        class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64"
-        style="background: url(images/bg-noise.png) repeat scroll 0 0"
-      >
-        <div
-          class="hidden md:flex justify-between items-center py-2 border-b text-sm py-3"
-          style="border-color: rgba(255, 255, 255, 0.25)"
-        >
-          <div>
-            <ul class="flex text-white">
-              <li>
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 fill-current text-white"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z"
-                    />
-                  </svg>
+<body class="antialiased bg-white font-sans text-gray-900">
+  <main class="w-full">
+    <!-- start header -->
+    <header class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64"
+      style="background: url(images/bg-noise.png) repeat scroll 0 0">
+      <div class="hidden md:flex justify-between items-center py-2 border-b text-sm py-3"
+        style="border-color: rgba(255, 255, 255, 0.25)">
+        <div>
+          <ul class="flex text-white">
+            <li>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z" />
+                </svg>
 
-                  <span class="ml-2"
-                    >Nirmans Dwarakapuram, Flat No. 505, 5th Floor, Panchavati,
-                    Nashik</span
-                  >
-                </div>
-              </li>
-              <li class="ml-6">
-                <div class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 fill-current text-white"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z"
-                    />
-                  </svg>
+                <span class="ml-2">Nirmans Dwarakapuram, Flat No. 505, 5th Floor, Panchavati,
+                  Nashik</span>
+              </div>
+            </li>
+            <li class="ml-6">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
+                  <path
+                    d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z" />
+                </svg>
 
-                  <a href="tel: 9322345892" class="ml-2">+91 9322345892</a>
-                </div>
-              </li>
-            </ul>
-          </div>
+                <a href="tel: 9322345892" class="ml-2">+91 9322345892</a>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-          <div class="">
-            <ul class="flex justify-end text-white">
-              <!-- <li>
+        <div class="">
+          <ul class="flex justify-end text-white">
+            <!-- <li>
                 <a href="#" target="_blank" title="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -200,24 +180,18 @@
                 </a>
               </li> -->
 
-              <li class="ml-6">
-                <a href="https://www.instagram.com/sparshayurved_/" target="_blank" title="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    class="fill-current"
-                  >
-                    <path
-                      d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z"
-                    ></path>
-                    <circle cx="11.994" cy="11.979" r="3.003"></circle>
-                  </svg>
-                </a>
-              </li>
+            <li class="ml-6">
+              <a href="https://www.instagram.com/sparshayurved_/" target="_blank" title="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                  <path
+                    d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z">
+                  </path>
+                  <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                </svg>
+              </a>
+            </li>
 
-              <!-- <li class="ml-6">
+            <!-- <li class="ml-6">
                 <a href="#" target="_blank" title="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -232,1096 +206,812 @@
                   </svg>
                 </a>
               </li> -->
-            </ul>
-          </div>
+          </ul>
         </div>
-
-        <div class="flex flex-wrap items-center justify-between py-6">
-          <div class="w-1/2 md:w-auto">
-            <a href="index.html" class="text-white font-bold text-xl">
-              SPARSH AYURVED
-            </a>
-          </div>
-
-          <label for="menu-toggle" class="pointer-cursor md:hidden block"
-            ><svg
-              class="fill-current text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-            >
-              <title>menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
-          ></label>
-
-          <input class="hidden" type="checkbox" id="menu-toggle" />
-
-          <div class="hidden md:block w-full md:w-auto" id="menu">
-            <nav
-              class="w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none"
-            >
-              <ul class="md:flex items-center">
-                <li>
-                  <a
-                    class="py-2 inline-block md:text-white md:hidden lg:block font-semibold"
-                    href="aboutus.html"
-                    >About Us</a
-                  >
-                </li>
-                <li class="md:ml-4">
-                  <a
-                    class="py-2 inline-block md:text-white md:px-2 font-semibold"
-                    href="#treatment"
-                    >Treatments</a
-                  >
-                </li>
-                <li class="md:ml-4 md:hidden lg:block">
-                  <a
-                    class="py-2 inline-block md:text-white md:px-2 font-semibold"
-                    href="blog.html"
-                    >Blog</a
-                  >
-                </li>
-                <li class="md:ml-4">
-                  <a
-                    class="py-2 inline-block md:text-white md:px-2 font-semibold"
-                    href="https://us17.list-manage.com/contact-form?u=0faac787acf6c29cf80bbd9a7&form_id=315cbb471d86bfd195f6eb45c5dfb7c9"
-                    >Contact Us</a
-                  >
-                </li>
-                <li class="md:ml-6 mt-3 md:mt-0">
-                  <a
-                    class="inline-block font-semibold px-4 py-2 text-white bg-blue-600 md:bg-transparent md:text-white border border-white rounded"
-                    href="https://sparsh-ayurved.mailchimpsites.com/" onmouseover="this.style.color=' #11e11c'" onmouseout="this.style.color= ''"
-                    >Book Appointment</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <!-- end header -->
-      <div class="containner text-center" style="margin-top: 200px">
-        <h1 class="text-3xl leading-tight font-bold mt-4 animate-bounce">
-          Welcome to Sparsh Ayurved
-        </h1>
-        <p class="text-xl leading-tight font-bold mt-4">
-          ॥ आरोग्यं परमं भाग्यं स्वास्थ्यं सर्वार्थसाधनम् ॥
-        </p>
-        <a
-          href="https://sparsh-ayurved.mailchimpsites.com/"
-          class="px-8 py-4 bg-blue text-blue-600 rounded inline-block font-semibold md:ml-8 mt-4 md:mt-0" onmouseover="this.style.color=' #11e11c'" onmouseout="this.style.color= ''"
-          >Book Appointment</a
-        >
       </div>
-      <!-- start hero -->
-      <div class="homepage-hero__grid">
-        <div class="homepage-hero__grid-item">
-          <a
-            href="blog.html#whyto"
-            class="homepage-hero__card homepage-hero__card--1"
-            aria-label="Click to learn more about Google Maps Platform benefits"
-            data-category="homepage"
-            data-action="buttonClick"
-            data-label="homepagewhyGoogleTall200M"
-          >
-            <div class="homepage-hero__card__content">
-              <span
-                class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--default"
-                >Why to choose</span
-              >
 
-              <p
-                class="homepage-hero__card__content__title homepage-hero__card__content__title--default"
-              >
-                <strong><small>Ayurveda</small></strong
-                >
-              </p>
-
-              <div class="homepage-hero__card__content__arrow__animate">
-                <div
-                  class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default"
-                >
-                  <svg
-                    width="40"
-                    height="39"
-                    viewBox="0 0 40 39"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--mobile"
-              style="height: 400px; background-color: black"
-            >
-              <video
-                muted=""
-                playsinline=""
-                poster="https://images.unsplash.com/photo-1504387828636-abeb50778c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWNpbmUlMjB5ZWxsb3d8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                autoplay=""
-                loop=""
-                lazyload=""
-                video=""
-                src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
-                style="opacity: 65%"
-              >
-                <source
-                  data-src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
-                  type="video/mp4"
-                />
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-            </div>
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--desktop"
-              style="height: 625px; background-color: black"
-            >
-              <video
-                muted=""
-                playsinline=""
-                poster="https://images.unsplash.com/photo-1504387828636-abeb50778c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWNpbmUlMjB5ZWxsb3d8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                autoplay=""
-                loop=""
-                lazyload=""
-                video=""
-                src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
-                style="opacity: 65%"
-              >
-                <source
-                  data-src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
-                  type="video/mp4"
-                />
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-            </div>
+      <div class="flex flex-wrap items-center justify-between py-6">
+        <div class="w-1/2 md:w-auto">
+          <a href="index.html" class="text-white font-bold text-xl">
+            SPARSH AYURVED
           </a>
         </div>
-        <div class="homepage-hero__grid-item">
-          <a
-            href="blog.html#ayurhelp"
-            class="homepage-hero__card homepage-hero__card--2"
-            aria-label="Click to visit the Why Google page"
-            data-category="homepage"
-            data-action="buttonClick"
-            data-label="homepageindustrySmallRetail"
-          >
-            <div class="homepage-hero__card__content">
-              <span
-                class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--yellow"
-                ></span
-              >
 
-              <p
-                class="homepage-hero__card__content__title homepage-hero__card__content__title--yellow"
-              >
-                How ayurvedic doctor help you online...
-              </p>
+        <label for="menu-toggle" class="pointer-cursor md:hidden block"><svg class="fill-current text-white"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg></label>
 
-              <div class="homepage-hero__card__content__arrow__animate">
-                <div
-                  class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--yellow"
-                >
-                  <svg
-                    width="40"
-                    height="39"
-                    viewBox="0 0 40 39"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:block w-full md:w-auto" id="menu">
+          <nav
+            class="w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
+            <ul class="md:flex items-center">
+              <li>
+                <a class="py-2 inline-block md:text-white md:hidden lg:block font-semibold" href="aboutus.html">About
+                  Us</a>
+              </li>
+              <li class="md:ml-4">
+                <a class="py-2 inline-block md:text-white md:px-2 font-semibold" href="#treatment">Treatments</a>
+              </li>
+              <li class="md:ml-4 md:hidden lg:block">
+                <a class="py-2 inline-block md:text-white md:px-2 font-semibold" href="blog.html">Blog</a>
+              </li>
+              <li class="md:ml-4">
+                <a class="py-2 inline-block md:text-white md:px-2 font-semibold"
+                  href="https://us17.list-manage.com/contact-form?u=0faac787acf6c29cf80bbd9a7&form_id=315cbb471d86bfd195f6eb45c5dfb7c9">Contact
+                  Us</a>
+              </li>
+              <li class="md:ml-6 mt-3 md:mt-0">
+                <a class="inline-block font-semibold px-4 py-2 text-white bg-blue-600 md:bg-transparent md:text-white border border-white rounded"
+                  href="https://sparsh-ayurved.mailchimpsites.com/" onmouseover="this.style.color=' #11e11c'"
+                  onmouseout="this.style.color= ''">Book Appointment</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <div class="containner text-center" style="margin-top: 200px">
+      <h1 class="text-3xl leading-tight font-bold mt-4 animate-bounce">
+        Welcome to Sparsh Ayurved
+      </h1>
+      <p class="text-xl leading-tight font-bold mt-4">
+        ॥ आरोग्यं परमं भाग्यं स्वास्थ्यं सर्वार्थसाधनम् ॥
+      </p>
+      <a href="https://sparsh-ayurved.mailchimpsites.com/"
+        class="px-8 py-4 bg-blue text-blue-600 rounded inline-block font-semibold md:ml-8 mt-4 md:mt-0"
+        onmouseover="this.style.color=' #11e11c'" onmouseout="this.style.color= ''">Book Appointment</a>
+    </div>
+    <!-- start hero -->
+    <div class="homepage-hero__grid">
+      <div class="homepage-hero__grid-item">
+        <a href="blog.html#whyto" class="homepage-hero__card homepage-hero__card--1"
+          aria-label="Click to learn more about Google Maps Platform benefits" data-category="homepage"
+          data-action="buttonClick" data-label="homepagewhyGoogleTall200M">
+          <div class="homepage-hero__card__content">
+            <span class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--default">Why to
+              choose</span>
+
+            <p class="homepage-hero__card__content__title homepage-hero__card__content__title--default">
+              <strong><small>Ayurveda</small></strong>
+            </p>
+
+            <div class="homepage-hero__card__content__arrow__animate">
+              <div class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default">
+                <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
+                    fill="white"></path>
+                </svg>
               </div>
             </div>
+          </div>
 
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--mobile"
-              style="height: 350px"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--mobile"
+            style="height: 400px; background-color: black">
+            <video muted="" playsinline=""
+              poster="https://images.unsplash.com/photo-1504387828636-abeb50778c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWNpbmUlMjB5ZWxsb3d8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              autoplay="" loop="" lazyload="" video=""
+              src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
+              style="opacity: 65%">
+              <source
+                data-src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
+                type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--desktop"
+            style="height: 625px; background-color: black">
+            <video muted="" playsinline=""
+              poster="https://images.unsplash.com/photo-1504387828636-abeb50778c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWNpbmUlMjB5ZWxsb3d8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              autoplay="" loop="" lazyload="" video=""
+              src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
+              style="opacity: 65%">
+              <source
+                data-src="https://vod-progressive.akamaized.net/exp=1669242591~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2497%2F21%2F537485615%2F2545271729.mp4~hmac=336f907e93a3108cca731a8bdd99c6c66b280bebb09e96d0ba01ccad43f0e55a/vimeo-prod-skyfire-std-us/01/2497/21/537485615/2545271729.mp4"
+                type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+        </a>
+      </div>
+      <div class="homepage-hero__grid-item">
+        <a href="blog.html#ayurhelp" class="homepage-hero__card homepage-hero__card--2"
+          aria-label="Click to visit the Why Google page" data-category="homepage" data-action="buttonClick"
+          data-label="homepageindustrySmallRetail">
+          <div class="homepage-hero__card__content">
+            <span class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--yellow"></span>
+
+            <p class="homepage-hero__card__content__title homepage-hero__card__content__title--yellow">
+              How ayurvedic doctor help you online...
+            </p>
+
+            <div class="homepage-hero__card__content__arrow__animate">
+              <div class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--yellow">
+                <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
+                    fill="white"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--mobile"
+            style="height: 350px">
+            <picture>
+              <source type="image/webp"
+                srcset="
                     https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                  media="(min-width: 1440px)"
-                />
+                media="(min-width: 1440px)" />
 
-                <source
-                  type="image/webp"
-                  srcset="
+              <source type="image/webp" srcset="
                     https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60 2x
-                  "
-                  media="(min-width: 600px)"
-                />
+                  " media="(min-width: 600px)" />
 
-                <source
-                  type="image/webp"
-                  srcset="
+              <source type="image/webp" srcset="
                     https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60 2x
-                  "
-                  media="(min-width: 0px)"
-                />
+                  " media="(min-width: 0px)" />
 
-                <img
-                  loading="lazy"
-                  src="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60"
-                  width="420"
-                  alt=""
-                  role="presentation"
-                />
-              </picture>
-            </div>
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--desktop"
-              style="height: 400px"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(max-width: 599px)"
-                  srcset="
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60"
+                width="420" alt="" role="presentation" />
+            </picture>
+          </div>
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--desktop"
+            style="height: 400px">
+            <picture>
+              <source type="image/webp" media="(max-width: 599px)" srcset="
                     https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60 2x
-                  "
-                />
+                  " />
 
-                <source
-                  media="(max-width: 599px)"
-                  srcset="
+              <source media="(max-width: 599px)" srcset="
                     https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60
-                  "
-                />
+                  " />
 
-                <source
-                  type="image/webp"
-                  media="(min-width: 0px)"
-                  srcset="
+              <source type="image/webp" media="(min-width: 0px)" srcset="
                     https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60 2x
-                  "
-                />
+                  " />
 
-                <img
-                  loading="lazy"
-                  src="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60"
-                  width="420"
-                  height="400"
-                  title="Two women at dress shop"
-                  alt="Two women at dress shop"
-                />
-              </picture>
-            </div>
-          </a>
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60=60"
+                width="420" height="400" title="Two women at dress shop" alt="Two women at dress shop" />
+            </picture>
+          </div>
+        </a>
 
-          <a
-            href=""
-            class="homepage-hero__card homepage-hero__card--3"
-            aria-label="Click to learn more about providing local information"
-            data-category="homepage"
-            data-action="buttonClick"
-            data-label="homepageuseCaseSmallLocalInformation"
-          >
-            <div class="homepage-hero__card__content mt-24">
-              <div class="homepage-hero__card__content__arrow__animate">
-                <div
-                  class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default"
-                >
-                  <svg
-                    width="40"
-                    height="39"
-                    viewBox="0 0 40 39"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
+        <a href="" class="homepage-hero__card homepage-hero__card--3"
+          aria-label="Click to learn more about providing local information" data-category="homepage"
+          data-action="buttonClick" data-label="homepageuseCaseSmallLocalInformation">
+          <div class="homepage-hero__card__content mt-24">
+            <div class="homepage-hero__card__content__arrow__animate">
+              <div class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default">
+                <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
+                    fill="white"></path>
+                </svg>
               </div>
-              <span
-                class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--secondary"
-                ></span
-              >
-
-              <p
-                class="homepage-hero__card__content__title homepage-hero__card__content__title--secondary"
-              >
-                Free ayurvedic consultaion
-              </p>
-
-              
             </div>
+            <span class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--secondary"></span>
 
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--mobile"
-              style="height: 300px"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
+            <p class="homepage-hero__card__content__title homepage-hero__card__content__title--secondary">
+              Free ayurvedic consultaion
+            </p>
+
+
+          </div>
+
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--mobile"
+            style="height: 300px">
+            <picture>
+              <source type="image/webp"
+                srcset="
                     https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI="
-                  media="(min-width: 1440px)"
-                />
+                media="(min-width: 1440px)" />
 
-                <source
-                  type="image/webp"
-                  srcset="
+              <source type="image/webp" srcset="
                     https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI= 2x
-                  "
-                  media="(min-width: 600px)"
-                />
+                  " media="(min-width: 600px)" />
 
-                <source
-                  type="image/webp"
-                  srcset="
+              <source type="image/webp" srcset="
                     https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI= 2x
-                  "
-                  media="(min-width: 0px)"
-                />
+                  " media="(min-width: 0px)" />
 
-                <img
-                  loading="lazy"
-                  src="https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI="
-                  width="420"
-                  alt=""
-                  role="presentation"
-                />
-              </picture>
-            </div>
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--desktop"
-              style="height: 300px"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(max-width: 599px)"
-                  srcset="
+              <img loading="lazy"
+                src="https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI="
+                width="420" alt="" role="presentation" />
+            </picture>
+          </div>
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--desktop"
+            style="height: 300px">
+            <picture>
+              <source type="image/webp" media="(max-width: 599px)" srcset="
                     https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI= 1x,
                     https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI= 2x
-                  "
-                />
+                  " />
 
-                <source media="(max-width: 599px)" srcset="" />
+              <source media="(max-width: 599px)" srcset="" />
 
-                <source
-                  type="image/webp"
-                  media="(min-width: 0px)"
-                  srcset="
+              <source type="image/webp" media="(min-width: 0px)" srcset="
                     https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI= 2x
-                  "
-                />
+                  " />
 
-                <img
-                  loading="lazy"
-                  src="https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI="
-                  width="420"
-                  height="300"
-                  title="Woman holding phone and balloon"
-                  alt="Woman holding phone and balloon"
-                />
-              </picture>
+              <img loading="lazy"
+                src="https://media.istockphoto.com/id/894125638/photo/stethoscope-on-the-table.jpg?b=1&s=170667a&w=0&k=20&c=clsDE4bIu4PklovbL8n5vPOHkubqmAuUcVe_eFlpyTI="
+                width="420" height="300" title="Woman holding phone and balloon"
+                alt="Woman holding phone and balloon" />
+            </picture>
+          </div>
+        </a>
+      </div>
+      <div class="homepage-hero__grid-item">
+        <a href="blog.html#powerful" class="homepage-hero__card homepage-hero__card--4"
+          aria-label="Click to learn more about Google Maps Platform products" data-category="homepage"
+          data-action="buttonClick" data-label="homepagecustomFindRightCombination">
+          <div class="homepage-hero__card__content">
+            <span class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--default"></span>
+
+            <p class="homepage-hero__card__content__title homepage-hero__card__content__title--default">
+              Avoid powerful drugs
+            </p>
+
+            <div class="homepage-hero__card__content__arrow__animate">
+              <div class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default">
+                <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
+                    fill="white"></path>
+                </svg>
+              </div>
             </div>
-          </a>
+          </div>
+
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--mobile"
+            style="height: 300px">
+            <picture>
+              <source type="image/webp"
+                srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                media="(min-width: 1440px)" />
+
+              <source type="image/webp"
+                srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                media="(min-width: 600px)" />
+
+              <source type="image/webp"
+                srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                media="(min-width: 0px)" />
+
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                width="420" alt="" role="presentation" />
+            </picture>
+          </div>
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--desktop"
+            style="height: 300px">
+            <picture>
+              <source type="image/webp" media="(max-width: 599px)"
+                srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+
+              <source media="(max-width: 599px)"
+                srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+
+              <source type="image/webp" media="(min-width: 0px)"
+                srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                width="420" height="300" title="Phone providing directions in a car"
+                alt="Phone providing directions in a car" />
+            </picture>
+          </div>
+        </a>
+
+        <a href="blog.html#chronic" class="homepage-hero__card homepage-hero__card--5"
+          aria-label="Click to visit the Solution Finder page" data-category="homepage" data-action="buttonClick"
+          data-label="homepagecustomFindYourSolution">
+          <div class="homepage-hero__card__content">
+            <span class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--secondary"></span>
+
+            <p class="homepage-hero__card__content__title homepage-hero__card__content__title--secondary">
+              Get rid of Chronic diseases
+            </p>
+
+            <div class="homepage-hero__card__content__arrow__animate">
+              <div class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default">
+                <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
+                    fill="white"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--mobile"
+            style="height: 300px">
+            <video muted="" playsinline=""
+              poster="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
+              autoplay="" loop="" lazyload="" video="">
+              <source
+                data-src="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
+                type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+          <div class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--desktop"
+            style="height: 300px">
+            <video muted="" playsinline=""
+              poster="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
+              autoplay="" loop="" lazyload="" video=""
+              src="https://storage.googleapis.com/gweb-earth-maps-platform/maps-platform/homepage_m02_masonry-cards_solution-finder_video.mp4">
+              <source
+                data-src="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
+                type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- end hero -->
+
+    <!-- start about -->
+    <section class="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32">
+      <div class="flex flex-col lg:flex-row lg:-mx-8">
+        <div class="w-full lg:w-1/2 lg:px-8">
+          <h2 class="text-3xl leading-tight font-bold mt-4">
+            Sparsh Ayurved ~ "A Healthy Outside Starts From Inside."
+          </h2>
+          <p class="text-lg mt-4 font-semibold">Belive in Ayurveda.</p>
+          <p class="mt-2 leading-relaxed">
+            Ayurveda brings health and keeping the doshas in balance. Overall,
+            it aims at holistically maintaining and improving general health
+            no matter what age you are.
+          </p>
         </div>
-        <div class="homepage-hero__grid-item">
-          <a
-            href="blog.html#powerful"
-            class="homepage-hero__card homepage-hero__card--4"
-            aria-label="Click to learn more about Google Maps Platform products"
-            data-category="homepage"
-            data-action="buttonClick"
-            data-label="homepagecustomFindRightCombination"
-          >
-            <div class="homepage-hero__card__content">
-              <span
-                class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--default"
-                ></span
-              >
 
-              <p
-                class="homepage-hero__card__content__title homepage-hero__card__content__title--default"
-              >
-                Avoid powerful drugs
+        <div class="w-full lg:w-1/2 lg:px-8 mt-12 lg:mt-0">
+          <div class="md:flex">
+            <div>
+              <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="md:ml-8 mt-4 md:mt-0">
+              <h4 class="text-xl font-bold leading-tight">
+                Everything You Need Under One Roof
+              </h4>
+              <p class="mt-2 leading-relaxed">
+                With telemedicine, you don’t have to drive to the doctor's
+                office or clinic, park, walk or sit in a waiting room when
+                you're sick. You can see your doctor from the comfort of your
+                own bed or sofa.
               </p>
-
-              <div class="homepage-hero__card__content__arrow__animate">
-                <div
-                  class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default"
-                >
-                  <svg
-                    width="40"
-                    height="39"
-                    viewBox="0 0 40 39"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
             </div>
+          </div>
 
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--mobile"
-              style="height: 300px"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  media="(min-width: 1440px)"
-                />
-
-                <source
-                  type="image/webp"
-                  srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  media="(min-width: 600px)"
-                />
-
-                <source
-                  type="image/webp"
-                  srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  media="(min-width: 0px)"
-                />
-
-                <img
-                  loading="lazy"
-                  src="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  width="420"
-                  alt=""
-                  role="presentation"
-                />
-              </picture>
+          <div class="md:flex mt-8">
+            <div>
+              <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
             </div>
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--image homepage-hero__card__hover--desktop"
-              style="height: 300px"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(max-width: 599px)"
-                  srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                />
-
-                <source
-                  media="(max-width: 599px)"
-                  srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                />
-
-                <source
-                  type="image/webp"
-                  media="(min-width: 0px)"
-                  srcset="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                />
-
-                <img
-                  loading="lazy"
-                  src="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNpbmUlMjBwaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  width="420"
-                  height="300"
-                  title="Phone providing directions in a car"
-                  alt="Phone providing directions in a car"
-                />
-              </picture>
-            </div>
-          </a>
-
-          <a
-            href="blog.html#chronic"
-            class="homepage-hero__card homepage-hero__card--5"
-            aria-label="Click to visit the Solution Finder page"
-            data-category="homepage"
-            data-action="buttonClick"
-            data-label="homepagecustomFindYourSolution"
-          >
-            <div class="homepage-hero__card__content">
-              <span
-                class="homepage-hero__card__content__eyebrow homepage-hero__card__content__eyebrow--secondary"
-                ></span
-              >
-
-              <p
-                class="homepage-hero__card__content__title homepage-hero__card__content__title--secondary"
-              >
-                Get rid of Chronic diseases
+            <div class="md:ml-8 mt-4 md:mt-0">
+              <h4 class="text-xl font-bold leading-tight">
+                Our Patient-Focused Approach
+              </h4>
+              <p class="mt-2 leading-relaxed">
+                Your treatment plan will perfectly match your needs,
+                lifestyle, and goals. Even if it’s been years since you last
+                visited the doctor, we can help. Our compassionate team, and
+                minimally-invasive treatments will help you feel completely at
+                ease.
               </p>
-
-              <div class="homepage-hero__card__content__arrow__animate">
-                <div
-                  class="homepage-hero__card__content__arrow homepage-hero__card__content__arrow--default"
-                >
-                  <svg
-                    width="40"
-                    height="39"
-                    viewBox="0 0 40 39"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 0L16.5631 3.43688L30.1644 17.0625H0.5V21.9375H30.1644L16.5631 35.5631L20 39L39.5 19.5L20 0Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
             </div>
-
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--mobile"
-              style="height: 300px"
-            >
-              <video
-                muted=""
-                playsinline=""
-                poster="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
-                autoplay=""
-                loop=""
-                lazyload=""
-                video=""
-              >
-                <source
-                  data-src="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
-                  type="video/mp4"
-                />
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-            </div>
-            <div
-              class="homepage-hero__card__hover homepage-hero__card__hover--video homepage-hero__card__hover--desktop"
-              style="height: 300px"
-            >
-              <video
-                muted=""
-                playsinline=""
-                poster="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
-                autoplay=""
-                loop=""
-                lazyload=""
-                video=""
-                src="https://storage.googleapis.com/gweb-earth-maps-platform/maps-platform/homepage_m02_masonry-cards_solution-finder_video.mp4"
-              >
-                <source
-                  data-src="https://player.vimeo.com/progressive_redirect/playback/754950567/rendition/720p/file.mp4?loc=external&oauth2_token_id=1027659527&signature=c28b5738043cd25f7350f6f7af82531fface03fe14fedbe6dc8e258050d51479"
-                  type="video/mp4"
-                />
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
-      <!-- end hero -->
+      <h2 id="treatment" class="text-3xl leading-tight font-bold mt-24">Treatments</h2>
+      <div class="md:flex md:flex-wrap mt-6 text-center md:-mx-4">
 
-      <!-- start about -->
-      <section
-        class="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32"
-      >
-        <div class="flex flex-col lg:flex-row lg:-mx-8">
-          <div class="w-full lg:w-1/2 lg:px-8">
-            <h2 class="text-3xl leading-tight font-bold mt-4">
-              Sparsh Ayurved ~ "A Healthy Outside Starts From Inside."
-            </h2>
-            <p class="text-lg mt-4 font-semibold">Belive in Ayurveda.</p>
-            <p class="mt-2 leading-relaxed">
-              Ayurveda brings health and keeping the doshas in balance. Overall,
-              it aims at holistically maintaining and improving general health
-              no matter what age you are.
+        <div class="md:w-1/2 md:px-4 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img style="width: 100px;" class="mx-auto" src="https://cdn-icons-png.flaticon.com/512/387/387561.png" />
+
+            <h4 class="text-xl font-bold mt-4">
+              General medicine <br />
+              कायचीकित्सा
+            </h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Internal medicine or general internal medicine (in
+              Commonwealth nations)...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#general" role="button" aria-expanded="false"
+                aria-controls="general">
+                <br> Read more
+              </a>
             </p>
-          </div>
-
-          <div class="w-full lg:w-1/2 lg:px-8 mt-12 lg:mt-0">
-            <div class="md:flex">
-              <div>
-                <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
-              </div>
-              <div class="md:ml-8 mt-4 md:mt-0">
-                <h4 class="text-xl font-bold leading-tight">
-                  Everything You Need Under One Roof
-                </h4>
-                <p class="mt-2 leading-relaxed">
-                  With telemedicine, you don’t have to drive to the doctor's
-                  office or clinic, park, walk or sit in a waiting room when
-                  you're sick. You can see your doctor from the comfort of your
-                  own bed or sofa.
-                </p>
-              </div>
-            </div>
-
-            <div class="md:flex mt-8">
-              <div>
-                <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
-              </div>
-              <div class="md:ml-8 mt-4 md:mt-0">
-                <h4 class="text-xl font-bold leading-tight">
-                  Our Patient-Focused Approach
-                </h4>
-                <p class="mt-2 leading-relaxed">
-                  Your treatment plan will perfectly match your needs,
-                  lifestyle, and goals. Even if it’s been years since you last
-                  visited the doctor, we can help. Our compassionate team, and
-                  minimally-invasive treatments will help you feel completely at
-                  ease.
-                </p>
+            <div class="collapse" id="general">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ... is the medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases.
               </div>
             </div>
           </div>
         </div>
-         <h2 id="treatment" class="text-3xl leading-tight font-bold mt-24">Treatments</h2>
-        <div class="md:flex md:flex-wrap mt-6 text-center md:-mx-4">
-         
-          <div class="md:w-1/2 md:px-4 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img style="width: 100px;" class="mx-auto" src="https://cdn-icons-png.flaticon.com/512/387/387561.png"/>
 
-              <h4 class="text-xl font-bold mt-4">
-                General medicine <br />
-                कायचीकित्सा
-              </h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Internal medicine or general internal medicine (in Commonwealth nations)...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#general" role="button" aria-expanded="false" aria-controls="general">
-    <br> Read more
-  </a>
-</p>
-<div class="collapse" id="general">
-  <div class="block p-2 rounded-lg shadow-lg bg-white">
-     ... is the medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases.</div>
-</div>
-            </div>
-          </div>
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="https://cdn-icons-png.flaticon.com/512/7292/7292482.png" alt="" style="width: 100px;"
+              class="mx-auto" />
 
-          <div class="md:w-1/2 md:px-4 mt-4 md:mt-0 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="https://cdn-icons-png.flaticon.com/512/7292/7292482.png" alt="" style="width: 100px;" class="mx-auto" />
+            <h4 class="text-xl font-bold mt-4">
+              Orthopedics <br />
+              संधीवात
+            </h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Orthopedic surgery or orthopedics, is the branch of
+              surgery concerned with conditions...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#orthopedics" role="button" aria-expanded="false"
+                aria-controls="orthopedics">
+                Read more
+              </a>
+            </p>
+            <div class="collapse" id="orthopedics">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ... involving the musculoskeletal system. Orthopedic surgeons use both surgical and nonsurgical means to
+                treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections,
+                tumors, and congenital disorders.
 
-              <h4 class="text-xl font-bold mt-4">
-                Orthopedics <br />
-                संधीवात
-              </h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Orthopedic surgery or orthopedics, is the branch of surgery concerned with conditions...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#orthopedics" role="button" aria-expanded="false" aria-controls="orthopedics">
-    Read more
-  </a>
-</p>
-<div class="collapse" id="orthopedics"> 
-  <div class="block p-2 rounded-lg shadow-lg bg-white">
- ... involving the musculoskeletal system. Orthopedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders.  
-    
-  </div>
-</div>
-            </div>
-          </div>
-
-          <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-             <img src="https://cdn-icons-png.flaticon.com/128/4556/4556976.png" alt="" style="width: 100px;" class="mx-auto" />
-
-              <h4 class="text-xl font-bold mt-4">
-                Gynaecology <br />
-                स्त्रीरोग
-              </h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Gynaecology or gynecology is the area of medicine that involves the treatment...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#Gynaecology" role="button" aria-expanded="false" aria-controls="Gynaecology">
-   <br> Read more
-  </a>
-</p>
-<div class="collapse" id="Gynaecology">
-  <div class="block p-2 rounded-lg shadow-lg bg-white">
-     ...of women's diseases, especially those of the reproductive organs. It is often paired with the field of obstetrics, forming the combined area of obstetrics and gynecology. The term comes from Greek and means "the science of women".Gynaecologist.
-  </div>
-</div>
-            </div>
-          </div>
-
-          <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="https://cdn-icons-png.flaticon.com/128/7858/7858216.png" alt="" style="width: 100px;" class="mx-auto" />
-
-              <h4 class="text-xl font-bold mt-4">Pediatrics <br />बालरोग</h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Pediatrics is the branch of medicine that involves the medical care of infants, children,...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#Pediatrics" role="button" aria-expanded="false" aria-controls="Pediatrics">
-   <br> Read more
-  </a>
-</p>
-<div class="collapse" id="Pediatrics">
-  <div class="block p-2 rounded-lg shadow-lg bg-white"> 
-    ...adolescents, and young adults. In the United Kingdom, paediatrics covers many of their youth until the age of 18.[1] The American Academy of Pediatrics recommends people seek pediatric care through the age of 21, but some pediatric subspecialists continue to care for adults up to 25.
-
-  </div>
-</div>
-            </div>
-          </div>
-          <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="https://cdn-icons-png.flaticon.com/128/2763/2763410.png" alt="" style="width: 100px;" class="mx-auto" />
-
-              <h4 class="text-xl font-bold mt-4">Skin & Hair Care <br />त्वचारोग</h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Dermatologists are the experts in diagnosing and treating hair loss...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#skin" role="button" aria-expanded="false" aria-controls="skin">
-   <br> Read more
-  </a>
-</p>
-<div class="collapse" id="skin">
-  <div class="block p-2 rounded-lg shadow-lg bg-white">
-   ...Dermatologists are the best doctors to consult for any kind of skin or hair fall related issue. They are trained to diagnose and treat all kinds of skin and hair problems.
-  </div>
-</div>
-            </div>
-          </div>
-          <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="https://cdn-icons-png.flaticon.com/128/2864/2864294.png" alt="" style="width: 100px;" class="mx-auto" />
-
-              <h4 class="text-xl font-bold mt-4">Cardiology <br />कार्डिओलॉजी</h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Cardiology is a branch of medicine that deals with disorders of the heart and the ...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#cardiology" role="button" aria-expanded="false" aria-controls="cardiology">
-   <br> Read more
-  </a>
-</p>
-<div class="collapse" id="cardiology"> 
-  <div class="block p-2 rounded-lg shadow-lg bg-white">
-   ...cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.
-  </div>
-</div>
-            </div>
-          </div>
-          <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="https://cdn-icons-png.flaticon.com/512/2184/2184238.png" alt="" style="width: 100px;" class="mx-auto" />
-
-              <h4 class="text-xl font-bold mt-4">Urology <br />मूत्रविज्ञान</h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Urologic diseases or conditions include urinary tract infections, kidney stones, ...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#urology" role="button" aria-expanded="false" aria-controls="urology">
-   <br> Read more
-  </a>
-</p>
-<div class="collapse" id="urology">
-  <div class="block p-2 rounded-lg shadow-lg bg-white">
-    ... bladder control problems, and prostate problems, among others. Some urologic conditions last only a short time, while others are long-lasting.
-  </div>
-</div>
-            </div>
-          </div>
-          <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
-            <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="https://cdn-icons-png.flaticon.com/128/173/173042.png" alt="" style="width: 100px;" class="mx-auto" />
-
-              <h4 class="text-xl font-bold mt-4">Diabetes <br />मधुमेह</h4>
-              <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">A group of diseases that result in too much sugar in the blood (high blood glucose)...
-                <a class="text-blue-800"  data-bs-toggle="collapse" href="#Diabetes" role="button" aria-expanded="false" aria-controls="Diabetes">
-   <br> Read more
-  </a>
-</p>
-<div class="collapse" id="Diabetes">
-  <div class="block p-2 rounded-lg shadow-lg bg-white">
-   ...In all cases, sugar builds up in the bloodstream. This is because the pancreas doesn't produce enough insulin. Both type 1 and type 2 diabetes may be caused by a combination of genetic or environmental factors.  
-  </div>
-</div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- end about -->
 
-      <!-- start testimonials -->
-      <section
-        class="relative bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-16 lg:py-32" id="aboutus"
-      >
-        <div class="flex flex-col lg:flex-row lg:-mx-8">
-          <div class="w-full lg:w-1/2 lg:px-8">
-            <h2 class="text-3xl leading-tight font-bold mt-4">
-              Why choose the Sparsh Ayurveda Center?
-            </h2>
-            <p class="mt-2 leading-relaxed">
-              <ul style="list-style-type: circle">
-                <li> We're prompt you can schedule appointment according to your
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="https://cdn-icons-png.flaticon.com/128/4556/4556976.png" alt="" style="width: 100px;"
+              class="mx-auto" />
+
+            <h4 class="text-xl font-bold mt-4">
+              Gynaecology <br />
+              स्त्रीरोग
+            </h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Gynaecology or gynecology is the area of medicine that
+              involves the treatment...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#Gynaecology" role="button" aria-expanded="false"
+                aria-controls="Gynaecology">
+                <br> Read more
+              </a>
+            </p>
+            <div class="collapse" id="Gynaecology">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ...of women's diseases, especially those of the reproductive organs. It is often paired with the field
+                of obstetrics, forming the combined area of obstetrics and gynecology. The term comes from Greek and
+                means "the science of women".Gynaecologist.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="https://cdn-icons-png.flaticon.com/128/7858/7858216.png" alt="" style="width: 100px;"
+              class="mx-auto" />
+
+            <h4 class="text-xl font-bold mt-4">Pediatrics <br />बालरोग</h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Pediatrics is the branch of medicine that involves the
+              medical care of infants, children,...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#Pediatrics" role="button" aria-expanded="false"
+                aria-controls="Pediatrics">
+                <br> Read more
+              </a>
+            </p>
+            <div class="collapse" id="Pediatrics">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ...adolescents, and young adults. In the United Kingdom, paediatrics covers many of their youth until
+                the age of 18.[1] The American Academy of Pediatrics recommends people seek pediatric care through the
+                age of 21, but some pediatric subspecialists continue to care for adults up to 25.
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="https://cdn-icons-png.flaticon.com/128/2763/2763410.png" alt="" style="width: 100px;"
+              class="mx-auto" />
+
+            <h4 class="text-xl font-bold mt-4">Skin & Hair Care <br />त्वचारोग</h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Dermatologists are the experts in diagnosing and
+              treating hair loss...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#skin" role="button" aria-expanded="false"
+                aria-controls="skin">
+                <br> Read more
+              </a>
+            </p>
+            <div class="collapse" id="skin">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ...Dermatologists are the best doctors to consult for any kind of skin or hair fall related issue. They
+                are trained to diagnose and treat all kinds of skin and hair problems.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="https://cdn-icons-png.flaticon.com/128/2864/2864294.png" alt="" style="width: 100px;"
+              class="mx-auto" />
+
+            <h4 class="text-xl font-bold mt-4">Cardiology <br />कार्डिओलॉजी</h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Cardiology is a branch of medicine that deals with
+              disorders of the heart and the ...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#cardiology" role="button" aria-expanded="false"
+                aria-controls="cardiology">
+                <br> Read more
+              </a>
+            </p>
+            <div class="collapse" id="cardiology">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ...cardiovascular system. The field includes medical diagnosis and treatment of congenital heart
+                defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="https://cdn-icons-png.flaticon.com/512/2184/2184238.png" alt="" style="width: 100px;"
+              class="mx-auto" />
+
+            <h4 class="text-xl font-bold mt-4">Urology <br />मूत्रविज्ञान</h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">Urologic diseases or conditions include urinary tract
+              infections, kidney stones, ...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#urology" role="button" aria-expanded="false"
+                aria-controls="urology">
+                <br> Read more
+              </a>
+            </p>
+            <div class="collapse" id="urology">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ... bladder control problems, and prostate problems, among others. Some urologic conditions last only a
+                short time, while others are long-lasting.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="https://cdn-icons-png.flaticon.com/128/173/173042.png" alt="" style="width: 100px;"
+              class="mx-auto" />
+
+            <h4 class="text-xl font-bold mt-4">Diabetes <br />मधुमेह</h4>
+            <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">A group of diseases that result in too much sugar in the
+              blood (high blood glucose)...
+              <a class="text-blue-800" data-bs-toggle="collapse" href="#Diabetes" role="button" aria-expanded="false"
+                aria-controls="Diabetes">
+                <br> Read more
+              </a>
+            </p>
+            <div class="collapse" id="Diabetes">
+              <div class="block p-2 rounded-lg shadow-lg bg-white">
+                ...In all cases, sugar builds up in the bloodstream. This is because the pancreas doesn't produce enough
+                insulin. Both type 1 and type 2 diabetes may be caused by a combination of genetic or environmental
+                factors.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start testimonials -->
+    <section class="relative bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-16 lg:py-32" id="aboutus">
+      <div class="flex flex-col lg:flex-row lg:-mx-8">
+        <div class="w-full lg:w-1/2 lg:px-8">
+          <h2 class="text-3xl leading-tight font-bold mt-4">
+            Why choose the Sparsh Ayurveda Center?
+          </h2>
+          <p class="mt-2 leading-relaxed">
+          <ul style="list-style-type: circle">
+            <li> We're prompt you can schedule appointment according to your
               convenience, better communication and privacy Easily accessible</li>
-              <li>Get the most authentic old medical science treatment with us liberating you from all the ailments you have inside your body</li>
-              </ul>
-             
-            </p>
-          </div>
+            <li>Get the most authentic old medical science treatment with us liberating you from all the ailments you
+              have inside your body</li>
+          </ul>
 
-          <div
-            class="w-full md:max-w-md md:mx-auto"
-          >
+          </p>
+        </div>
+
+        <div class="w-full md:max-w-md md:mx-auto">
           <img src="images/ayurvedicmedicare.png" class="w-full h-full rounded-lg" alt="">
 
-            <p class="italic text-sm mt-2 text-center">
-            " Healthy outside starts from inside. " 
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- end testimonials -->
-
-      <!-- start blog -->
-      <section
-        class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32"
-      >
-        <div id="blog">
-          <h2 class="text-3xl leading-tight font-bold">Health Blog</h2>
-          <p class="text-gray-600 mt-2 md:max-w-lg">
-            "व्यायामात् लभते स्वास्थ्यं दीर्घायुष्यं बलं सुखं।
-
-आरोग्यं परमं भाग्यं स्वास्थ्यं सर्वार्थसाधनम्॥"
+          <p class="italic text-sm mt-2 text-center">
+            " Healthy outside starts from inside. "
           </p>
-
-          <a
-            href="blog.html"
-            title=""
-            class="inline-block text-teal-500 font-semibold mt-6 mt:md-0"
-            >View All Posts</a
-          >
         </div>
+      </div>
+    </section>
+    <!-- end testimonials -->
 
-        <div class="md:flex mt-12 md:-mx-4">
-          <div class="md:px-4 md:w-1/2 xl:w-1/4">
-            <div class="bg-white rounded border border-gray-300">
-              <div class="w-full h-48 overflow-hidden bg-gray-300"><img src="images/card.png" alt=""></div>
-              <div class="p-4">
-                <div class="flex items-center text-sm">
-                  <span class="text-teal-500 font-semibold">Doctor</span>
-                  <span class="ml-4 text-gray-600">2022</span>
-                </div>
-                <p class="text-lg font-semibold leading-tight mt-4">
-                  Ayurvedic Consultant
-                </p>
-                <p class="text-gray-600 mt-1">
-                  Precautionary measures by student consultant.
-Disease related consultaion by team of professionals.
-                </p>
-                <div class="flex items-center mt-4">
-                  <div
-                    class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"
-                  ></div>
-                  <div class="ml-4">
-                    <p class="text-gray-600">
-                      VD.
-                      <span class="text-gray-900 font-semibold">Yash Bhamare</span>
-                    </p>
-                  </div>
+    <!-- start blog -->
+    <section class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
+      <div id="blog">
+        <h2 class="text-3xl leading-tight font-bold">Health Blog</h2>
+        <p class="text-gray-600 mt-2 md:max-w-lg">
+          "व्यायामात् लभते स्वास्थ्यं दीर्घायुष्यं बलं सुखं।
+
+          आरोग्यं परमं भाग्यं स्वास्थ्यं सर्वार्थसाधनम्॥"
+        </p>
+
+        <a href="blog.html" title="" class="inline-block text-teal-500 font-semibold mt-6 mt:md-0">View All Posts</a>
+      </div>
+
+      <div class="md:flex mt-12 md:-mx-4">
+        <div class="md:px-4 md:w-1/2 xl:w-1/4">
+          <div class="bg-white rounded border border-gray-300">
+            <div class="w-full h-48 overflow-hidden bg-gray-300"><img src="images/card.png" alt=""></div>
+            <div class="p-4">
+              <div class="flex items-center text-sm">
+                <span class="text-teal-500 font-semibold">Doctor</span>
+                <span class="ml-4 text-gray-600">2022</span>
+              </div>
+              <p class="text-lg font-semibold leading-tight mt-4">
+                Ayurvedic Consultant
+              </p>
+              <p class="text-gray-600 mt-1">
+                Precautionary measures by student consultant.
+                Disease related consultaion by team of professionals.
+              </p>
+              <div class="flex items-center mt-4">
+                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
+                <div class="ml-4">
+                  <p class="text-gray-600">
+                    VD.
+                    <span class="text-gray-900 font-semibold">Yash Bhamare</span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-      </section>
-      <!-- end blog -->
 
-      <!-- start cta -->
-      <section
-        class="relative bg-blue-teal-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 text-center md:text-left"
-      >
-        <div class="md:flex md:items-center md:justify-center">
-          <h2 class="text-xl font-bold text-white">
-            Get in touch with us today! <br class="block md:hidden" />Call us
-            on: +91 9322345892
-          </h2>
-          <a
-            href="https://sparsh-ayurved.mailchimpsites.com/"
-            class="px-8 py-4 bg-white text-blue-600 rounded inline-block font-semibold md:ml-8 mt-4 md:mt-0" onmouseover="this.style.color=' #11e11c'" onmouseout="this.style.color= ''"
-            >Book Appointment</a
-          >
-        </div>
-      </section>
-      <!-- end cta -->
+      </div>
+    </section>
+    <!-- end blog -->
 
-      <!-- start footer -->
-      <footer
-        class="relative bg-gray-900 text-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 lg:py-24"
-      >
-        <div class="flex flex-col md:flex-row">
-          <div class="w-full lg:w-2/6 lg:mx-4 lg:pr-8">
-            <h3 class="font-bold text-2xl">Sparsh Ayurved</h3>
-            <p class="text-gray-400">
-              Keep Rising through your healing.
-            </p>
+    <!-- start cta -->
+    <section
+      class="relative bg-blue-teal-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 text-center md:text-left">
+      <div class="md:flex md:items-center md:justify-center">
+        <h2 class="text-xl font-bold text-white">
+          Get in touch with us today! <br class="block md:hidden" />Call us
+          on: +91 9322345892
+        </h2>
+        <a href="https://sparsh-ayurved.mailchimpsites.com/"
+          class="px-8 py-4 bg-white text-blue-600 rounded inline-block font-semibold md:ml-8 mt-4 md:mt-0"
+          onmouseover="this.style.color=' #11e11c'" onmouseout="this.style.color= ''">Book Appointment</a>
+      </div>
+    </section>
+    <!-- end cta -->
 
-            <form class="flex items-center mt-6">
-              <div class="w-full">
-                <label
-                  class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
-                  for="grid-last-name"
-                >
-                  Subscribe for our Newsletter
-                </label>
-                <div class="relative">
-                  <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    type="email"
-                    placeholder="Enter Your Email Address"
-                  />
+    <!-- start footer -->
+    <footer class="relative bg-gray-900 text-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 lg:py-24">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full lg:w-2/6 lg:mx-4 lg:pr-8">
+          <h3 class="font-bold text-2xl">Sparsh Ayurved</h3>
+          <p class="text-gray-400">
+            Keep Rising through your healing.
+          </p>
 
-                  <button
-                    type="submit"
-                    class="bg-teal-500 hover:bg-teal-400 text-white px-4 py-2 text-sm font-bold rounded absolute top-0 right-0 my-2 mr-2"
-                  >
-                    Subscribe
-                  </button>
-                </div>
+          <form class="flex items-center mt-6">
+            <div class="w-full">
+              <label class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2" for="grid-last-name">
+                Subscribe for our Newsletter
+              </label>
+              <div class="relative">
+                <input
+                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  type="email" placeholder="Enter Your Email Address" />
+
+                <button type="submit"
+                  class="bg-teal-500 hover:bg-teal-400 text-white px-4 py-2 text-sm font-bold rounded absolute top-0 right-0 my-2 mr-2">
+                  Subscribe
+                </button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
+        </div>
 
-          <div class="w-full lg:w-1/6 mt-8 lg:mt-0 lg:mx-4">
-            <h5 class="uppercase tracking-wider font-semibold text-gray-500">
-              Treatments
-            </h5>
-            <ul class="mt-4">
-              <li class="mt-2">
-                <a href="#" title="" class="opacity-75 hover:opacity-100"
-                  >Pediatrics</a
-                >
-              </li>
-              <li class="mt-2">
-                <a href="#" title="" class="opacity-75 hover:opacity-100"
-                  >Orthopedics</a
-                >
-              </li>
-              <li class="mt-2">
-                <a href="#" title="" class="opacity-75 hover:opacity-100"
-                  >General medicine</a
-                >
-              </li>
-              <li class="mt-2">
-                <a href="#" title="" class="opacity-75 hover:opacity-100"
-                  >Gynecology</a
-                >
-              </li>
-              <li class="mt-2">
-                <a href="#" title="" class="opacity-75 hover:opacity-100"
-                  >Skin & Hair Care</a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="w-full lg:w-1/6 mt-8 lg:mt-0 lg:mx-4">
+          <h5 class="uppercase tracking-wider font-semibold text-gray-500">
+            Treatments
+          </h5>
+          <ul class="mt-4">
+            <li class="mt-2">
+              <a href="#" title="" class="opacity-75 hover:opacity-100">Pediatrics</a>
+            </li>
+            <li class="mt-2">
+              <a href="#" title="" class="opacity-75 hover:opacity-100">Orthopedics</a>
+            </li>
+            <li class="mt-2">
+              <a href="#" title="" class="opacity-75 hover:opacity-100">General medicine</a>
+            </li>
+            <li class="mt-2">
+              <a href="#" title="" class="opacity-75 hover:opacity-100">Gynecology</a>
+            </li>
+            <li class="mt-2">
+              <a href="#" title="" class="opacity-75 hover:opacity-100">Skin & Hair Care</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="w-full lg:w-2/6 mt-8 lg:mt-0 lg:mx-4 lg:pr-8">
-            <h5 class="uppercase tracking-wider font-semibold text-gray-500">
-              Contact Details
-            </h5>
-            <ul class="mt-4">
-              <li>
-                <a
-                  href="https://www.google.com/maps/place/Nirman's+Dwarkapuram/@20.0001409,73.7997779,17z/data=!3m1!4b1!4m5!3m4!1s0x3bddeaf8db509543:0xec23f3e8af6a41f3!8m2!3d20.0001409!4d73.8019719"
-                  title=""
-                  class="block flex items-center opacity-75 hover:opacity-100"
-                >
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="fill-current"
-                    >
-                      <path
-                        d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="ml-3">
-                    Nirmans Dwarakapuram, Flat No. 505, 5th Floor, Panchavati,
-                    Nashik
-                  </span>
-                </a>
-              </li>
-              <li class="mt-4">
-                <a
-                  href="#"
-                  title=""
-                  class="block flex items-center opacity-75 hover:opacity-100"
-                >
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="fill-current"
-                    >
-                      <path
-                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10c5.514,0,10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"
-                      />
-                      <path d="M13 7L11 7 11 13 17 13 17 11 13 11z" />
-                    </svg>
-                  </span>
-                  <span class="ml-3"> Mon - Sun: 9:00 - 19:00<br /> </span>
-                </a>
-              </li>
-              <li class="mt-4">
-                <a
-                  href="tel: 9322345892"
-                  title=""
-                  class="block flex items-center opacity-75 hover:opacity-100"
-                >
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="fill-current"
-                    >
-                      <path
-                        d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="ml-3"> +91 9322345892 </span>
-                </a>
-              </li>
-              <li class="mt-4">
-                <a
-                  href="mailto: sparshayurvedyb@gmail.com"
-                  title="Yash Bhamare"
-                  class="block flex items-center opacity-75 hover:opacity-100"
-                >
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="fill-current"
-                    >
-                      <path
-                        d="M20,4H4C2.896,4,2,4.896,2,6v12c0,1.104,0.896,2,2,2h16c1.104,0,2-0.896,2-2V6C22,4.896,21.104,4,20,4z M20,8.7l-8,5.334 L4,8.7V6.297l8,5.333l8-5.333V8.7z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="ml-3"> sparshayurvedyb@gmail.com </span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="w-full lg:w-2/6 mt-8 lg:mt-0 lg:mx-4 lg:pr-8">
+          <h5 class="uppercase tracking-wider font-semibold text-gray-500">
+            Contact Details
+          </h5>
+          <ul class="mt-4">
+            <li>
+              <a href="https://www.google.com/maps/place/Nirman's+Dwarkapuram/@20.0001409,73.7997779,17z/data=!3m1!4b1!4m5!3m4!1s0x3bddeaf8db509543:0xec23f3e8af6a41f3!8m2!3d20.0001409!4d73.8019719"
+                title="" class="block flex items-center opacity-75 hover:opacity-100">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z" />
+                  </svg>
+                </span>
+                <span class="ml-3">
+                  Nirmans Dwarakapuram, Flat No. 505, 5th Floor, Panchavati,
+                  Nashik
+                </span>
+              </a>
+            </li>
+            <li class="mt-4">
+              <a href="#" title="" class="block flex items-center opacity-75 hover:opacity-100">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10c5.514,0,10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                    <path d="M13 7L11 7 11 13 17 13 17 11 13 11z" />
+                  </svg>
+                </span>
+                <span class="ml-3"> Mon - Sun: 9:00 - 19:00<br /> </span>
+              </a>
+            </li>
+            <li class="mt-4">
+              <a href="tel: 9322345892" title="" class="block flex items-center opacity-75 hover:opacity-100">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z" />
+                  </svg>
+                </span>
+                <span class="ml-3"> +91 9322345892 </span>
+              </a>
+            </li>
+            <li class="mt-4">
+              <a href="mailto: sparshayurvedyb@gmail.com" title="Yash Bhamare"
+                class="block flex items-center opacity-75 hover:opacity-100">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M20,4H4C2.896,4,2,4.896,2,6v12c0,1.104,0.896,2,2,2h16c1.104,0,2-0.896,2-2V6C22,4.896,21.104,4,20,4z M20,8.7l-8,5.334 L4,8.7V6.297l8,5.333l8-5.333V8.7z" />
+                  </svg>
+                </span>
+                <span class="ml-3"> sparshayurvedyb@gmail.com </span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="w-full lg:w-1/6 mt-8 lg:mt-0 lg:mx-4">
-            <h5 class="uppercase tracking-wider font-semibold text-gray-500">
-              We're Social
-            </h5>
-            <ul class="mt-4 flex">
-              <!-- <li>
+        <div class="w-full lg:w-1/6 mt-8 lg:mt-0 lg:mx-4">
+          <h5 class="uppercase tracking-wider font-semibold text-gray-500">
+            We're Social
+          </h5>
+          <ul class="mt-4 flex">
+            <!-- <li>
                 <a href="#" target="_blank" title="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1353,24 +1043,17 @@ Disease related consultaion by team of professionals.
                 </a>
               </li> -->
 
-              <li class="ml-6">
-                <a href="https://www.instagram.com/sparshayurved_/" target="_blank" title="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    class="fill-current"
-                  >
-                    <path
-                      d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z"
-                    />
-                    <circle cx="11.994" cy="11.979" r="3.003" />
-                  </svg>
-                </a>
-              </li>
+            <li class="ml-6">
+              <a href="https://www.instagram.com/sparshayurved_/" target="_blank" title="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                  <path
+                    d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z" />
+                  <circle cx="11.994" cy="11.979" r="3.003" />
+                </svg>
+              </a>
+            </li>
 
-              <!-- <li class="ml-6">
+            <!-- <li class="ml-6">
                 <a href="#" target="_blank" title="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1385,17 +1068,18 @@ Disease related consultaion by team of professionals.
                   </svg>
                 </a>
               </li> -->
-            </ul>
+          </ul>
 
-            <p class="text-sm text-gray-400 mt-12">
-              © 2022 Sparsh Ayurved. <br class="hidden lg:block" />All Rights
-              Reserved.
-            </p>
-          </div>
+          <p class="text-sm text-gray-400 mt-12">
+            © 2022 Sparsh Ayurved. <br class="hidden lg:block" />All Rights
+            Reserved.
+          </p>
         </div>
-      </footer>
-      <!-- end footer -->
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-  </body>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
 </html>
